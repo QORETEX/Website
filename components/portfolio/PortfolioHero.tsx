@@ -1,27 +1,35 @@
-'use client';
-
 import Link from 'next/link';
-import { HiArrowLeft } from 'react-icons/hi';
 
 export default function PortfolioHero() {
   return (
-    <section className="pt-32 pb-12 px-6 max-w-3xl mx-auto">
+    <section className="pt-24 pb-16 px-6 max-w-2xl mx-auto">
       <Link
         href="/"
-        className="inline-flex items-center text-gray-500 hover:text-gray-900 mb-12 transition-colors text-sm"
+        className="text-gray-500 hover:text-gray-900 transition-colors text-sm mb-16 inline-block"
       >
-        <HiArrowLeft className="mr-2" size={16} />
-        Back
+        ← Home
       </Link>
 
-      <div>
-        <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-          Work & Projects
+      <div className="space-y-6">
+        <h1 className="text-3xl md:text-4xl font-medium text-gray-900 leading-tight">
+          Qoretex
         </h1>
-        <p className="text-lg text-gray-600 leading-relaxed">
-          Selected projects across architecture, networking, cybersecurity,
-          software, and electronics. Each one built to solve real problems.
+        <p className="text-lg text-gray-600 leading-relaxed max-w-xl">
+          We build integrated technology solutions — combining architecture, networking,
+          cybersecurity, software, and electronics into seamless systems. Based in Accra,
+          serving businesses across Ghana.
         </p>
+        <div className="flex gap-6 text-sm">
+          <a href="#work" className="text-gray-600 hover:text-gray-900 transition-colors">
+            Work
+          </a>
+          <a href="#services" className="text-gray-600 hover:text-gray-900 transition-colors">
+            Services
+          </a>
+          <a href="#contact" className="text-gray-600 hover:text-gray-900 transition-colors">
+            Contact
+          </a>
+        </div>
       </div>
     </section>
   );
